@@ -1,8 +1,10 @@
 package com.example.addy.gst;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +49,38 @@ public class Menu extends AppCompatActivity {
                if(i==2){
                    Intent intent= new Intent(Menu.this,Services.class);
                    startActivity(intent);
+               }
+
+               if(i==4){
+                   AlertDialog.Builder mybuilder= new AlertDialog.Builder(Menu.this);
+                   mybuilder.setTitle("Disclaimer");
+                   mybuilder.setIcon(R.drawable.inf);
+                   mybuilder.setMessage("GST stands for General Service Tax. The information contained in the mobile app is simplified representation of complete Rules and Regulation");
+                   mybuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                       @Override
+                       public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                       }
+                   });
+
+                   AlertDialog alertDialog= mybuilder.create();
+                   alertDialog.show();
+               }
+
+               if (i==3){
+                   AlertDialog.Builder mybuilder= new AlertDialog.Builder(Menu.this);
+                   mybuilder.setTitle("About us");
+                   mybuilder.setIcon(R.drawable.inf);
+                   mybuilder.setMessage("");
+                   mybuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                       @Override
+                       public void onClick(DialogInterface dialogInterface, int i) {
+                           dialogInterface.dismiss();
+                       }
+                   });
+
+                   AlertDialog alertDialog= mybuilder.create();
+                   alertDialog.show();
                }
 
            }

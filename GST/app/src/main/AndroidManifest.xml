@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Search"/>
+        <activity android:name=".Search" />
         <activity android:name=".Goods">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +40,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Services"></activity>
+        <activity android:name=".Services" />
     </application>
 
 </manifest>
