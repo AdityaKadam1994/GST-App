@@ -69,9 +69,11 @@ public class Menu extends AppCompatActivity {
 
                if (i==3){
                    AlertDialog.Builder mybuilder= new AlertDialog.Builder(Menu.this);
-                   mybuilder.setTitle("About us");
-                   mybuilder.setIcon(R.drawable.inf);
-                   mybuilder.setMessage("");
+                   mybuilder.setTitle("Connect us");
+                   mybuilder.setIcon(R.drawable.connect);
+
+                   mybuilder.setMessage("addy.7kad@gmail.com vinodnimbalkar@gmail.com akshay007@gmail.com");
+
                    mybuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                        @Override
                        public void onClick(DialogInterface dialogInterface, int i) {
