@@ -21,8 +21,8 @@ import android.widget.TextView;
 public class Menu extends AppCompatActivity {
 
     ListView lv;
-   int []Images={R.drawable.magnifier,R.drawable.cart,R.drawable.dinnerbell};
-   String [] options= {"Search","Tax Rates:Goods","Tax Rates:Services"};
+   int []Images={R.drawable.magnifier,R.drawable.cart,R.drawable.dinnerbell,R.drawable.about,R.drawable.icon};
+   String [] options= {"Search","Tax Rates:Goods","Tax Rates:Services","About Us","Disclaimer"};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
