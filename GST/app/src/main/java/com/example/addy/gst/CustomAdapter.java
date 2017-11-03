@@ -142,3 +142,62 @@ class MyAdapter1 extends ArrayAdapter<String> {
 }
 
 
+
+
+class MyAdapter2 extends ArrayAdapter<String> {
+    String [] typ;
+    String[] desc;
+    String[] rat;
+    String []hs;
+    Context mycontext;
+    public MyAdapter2(@NonNull Context context, String[]type, String[] description,String[] rate,String[] hsn) {
+        super(context, R.layout.goodlvlayout);
+        this.typ=type;
+        this.desc=description;
+        this.rat=rate;
+        this.hs=hsn;
+        this.mycontext=context;
+    }
+
+    @Override
+
+    public int getCount(){
+        return typ.length;
+
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        ViewHolder1 myViewHolder= new ViewHolder1();
+        if (convertView==null) {
+            LayoutInflater layoutInflater1 = (LayoutInflater) mycontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = layoutInflater1.inflate(R.layout.service28row, parent, false);
+
+            myViewHolder.gopt = (TextView) convertView.findViewById(R.id.type);
+            myViewHolder.gdesc=(TextView)convertView.findViewById(R.id.description);
+            myViewHolder.grate=(TextView)convertView.findViewById(R.id.rate);
+            myViewHolder.ghsn=(TextView)convertView.findViewById(R.id.hsn);
+
+            convertView.setTag(myViewHolder);
+        } else {
+            myViewHolder=(ViewHolder1)convertView.getTag();
+        }
+
+        myViewHolder.gopt.setText(typ[position]);
+        myViewHolder.gdesc.setText(desc[position]);
+        myViewHolder.grate.setText(rat[position]);
+        myViewHolder.ghsn.setText(hs[position]);
+        return convertView;
+    }
+
+    static class ViewHolder1{
+
+        TextView gopt;
+        TextView gdesc;
+        TextView grate;
+        TextView ghsn;
+    }
+}
+
+

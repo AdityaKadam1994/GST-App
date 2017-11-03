@@ -72,7 +72,7 @@ public class Menu extends AppCompatActivity {
                    mybuilder.setTitle("Connect us");
                    mybuilder.setIcon(R.drawable.connect);
 
-                   mybuilder.setMessage("addy.7kad@gmail.com vinodnimbalkar@gmail.com akshay007@gmail.com");
+                   mybuilder.setMessage("addy.7kad@gmail.com            akshay007@gmail.com");
 
                    mybuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                        @Override
@@ -88,6 +88,7 @@ public class Menu extends AppCompatActivity {
            }
        });
     }
+
 
 
 
