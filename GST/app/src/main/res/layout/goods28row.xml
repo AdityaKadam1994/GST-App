@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/type"
+        android:id="@+id/goods28type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -16,30 +16,30 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/goods28description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/type"
-        android:layout_below="@+id/type"
+        android:layout_alignStart="@+id/goods28type"
+        android:layout_below="@+id/goods28type"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/rate"
+        android:id="@+id/goods28rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/description"
-        android:layout_below="@+id/description"
+        android:layout_alignStart="@+id/goods28description"
+        android:layout_below="@+id/goods28description"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/hsn"
+        android:id="@+id/goods28hsn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/rate"
-        android:layout_below="@+id/rate"
+        android:layout_alignStart="@+id/goods28rate"
+        android:layout_below="@+id/goods28rate"
         android:text="TextView" />
 
 

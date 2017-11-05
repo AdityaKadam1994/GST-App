@@ -41,8 +41,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".Services" />
-        <activity android:name=".Services0" />
-        <activity android:name=".Service28"></activity>
+        <activity android:name=".Service28" />
+        <activity android:name=".Goods28" />
+        <activity android:name=".Goods0" />
+        <activity android:name=".Goods3"></activity>
+        <activity android:name=".Goods5"></activity>
+        <activity android:name=".Goods12"></activity>
+        <activity android:name=".Goods18"></activity>
+        <activity android:name=".Service0" />
+        <activity android:name=".Service5" />
+        <activity android:name=".Service12" />
+        <activity android:name=".Service18" />
+
     </application>
 
 </manifest>

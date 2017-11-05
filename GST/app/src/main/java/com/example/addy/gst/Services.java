@@ -24,6 +24,26 @@ public class Services extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0)
                 {
+                    Intent intent= new Intent(Services.this,Service0.class);
+                    startActivity(intent);
+                }
+                if(i==1)
+                {
+                    Intent intent= new Intent(Services.this,Service5.class);
+                    startActivity(intent);
+                }
+                if(i==2)
+                {
+                    Intent intent= new Intent(Services.this,Service12.class);
+                    startActivity(intent);
+                }
+                if(i==3)
+                {
+                    Intent intent= new Intent(Services.this,Service18.class);
+                    startActivity(intent);
+                }
+                if(i==4)
+                {
                     Intent intent= new Intent(Services.this,Service28.class);
                     startActivity(intent);
                 }

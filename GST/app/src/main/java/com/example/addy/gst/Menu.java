@@ -36,11 +36,11 @@ public class Menu extends AppCompatActivity {
        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override
            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               if(i==0) {
+              /* if(i==0) {
                    Intent intent = new Intent(Menu.this, Search.class);
 
                    startActivity(intent);
-               }
+               }*/
                if(i==1){
                    Intent intent= new Intent(Menu.this,Goods.class);
                    startActivity(intent);

@@ -5,28 +5,22 @@ package com.example.addy.gst;
  */
 
 public class Item {
-    int id;
+
     String type;
     String description;
     String rate;
     String hsn;
-    String lang;
-    public Item(int id, String type, String description, String rate, String hsn, String lang) {
-        this.id = id;
+
+    public Item( String type, String description, String rate, String hsn) {
+
         this.type = type;
         this.description = description;
         this.rate = rate;
         this.hsn = hsn;
-        this.lang = lang;
+
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getType() {
         return type;
@@ -60,12 +54,5 @@ public class Item {
         this.hsn = hsn;
     }
 
-    public String getLang() {
-        return lang;
-    }
-
-    public void setLang(String lang) {
-        this.lang = lang;
-    }
 }
 
